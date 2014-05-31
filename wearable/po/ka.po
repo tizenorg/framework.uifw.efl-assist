@@ -1,0 +1,14 @@
+msgid "IDS_SCR_SBODY_SCREEN_READER_IS_NOT_SUPPORTED_BY_THIS_APPLICATION_PRESS_THE_HOME_OR_BACK_KEY_TO_RETURN_TO_THE_HOME_SCREEN"
+msgstr "ეკრანის წამკითხველი არ მუშაობს ამ პროგრამაში. საწყისი გვერდის ან უკუსვლის ღილაკზე დაჭერით დაბრუნდებით საწყის გვერდზე"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ_SECOND"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "ყველაფრის გასუფთავება"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "საძიებო ველი"

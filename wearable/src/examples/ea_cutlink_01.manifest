@@ -1,0 +1,11 @@
+<manifest>
+	<define>
+		<domain name="ea_cutlink_01"/>
+	</define>
+	<request>
+		<domain name="ea_cutlink_01"/>
+	</request>
+	<assign>
+		<filesystem path="/bin/ea_cutlink_01" label="@"/>
+	</assign>
+</manifest>
