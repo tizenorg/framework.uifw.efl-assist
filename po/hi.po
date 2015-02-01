@@ -1,0 +1,14 @@
+msgid "IDS_SCR_SBODY_SCREEN_READER_IS_NOT_SUPPORTED_BY_THIS_APPLICATION_PRESS_THE_HOME_OR_BACK_KEY_TO_RETURN_TO_THE_HOME_SCREEN"
+msgstr "स्क्रीन रीडर इस एप्लीकेशन द्वारा समर्थित नहीं है। होम स्क्रीन पर वापस जाने के लिए होम या वापस कुंजी दबाएँ"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "अआइईउऊएऐओऔऋकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ_SECOND"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "सभी साफ़ करें"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "खोज फ़ील्‍ड"

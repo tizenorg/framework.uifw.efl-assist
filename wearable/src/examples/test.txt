@@ -1,6 +1,0 @@
-A a very simple text.
-phone number: +82-10-1234-5678
-email address: tizen@tizen.org
-date time: 2013-02-25
-unc: \\\\123.123.123.213\\test.txt
-uri: http://tizen.org

@@ -1,27 +1,24 @@
 Name:       efl-assist
 Summary:    EFL assist library
-Version:    0.1.66b05
+Version:    0.1.143
 Release:    1
 Group:      System/Libraries
-License:    APLv2
+License:    Flora License 1.1
+URL:        http://www.tizen.org/
 Source0:    %{name}-%{version}.tar.gz
-BuildRequires:  cmake
+#BuildRequires:  sec-product-features
 BuildRequires:  pkgconfig(elementary)
+BuildRequires:  pkgconfig(ecore-x)
 BuildRequires:  pkgconfig(dlog)
 BuildRequires:  pkgconfig(vconf)
 BuildRequires:  pkgconfig(tts)
+BuildRequires:  pkgconfig(cairo)
+BuildRequires:  pkgconfig(native-buffer)
+BuildRequires:  pkgconfig(capi-media-image-util)
+BuildRequires:  gettext
+BuildRequires:  cmake
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
-%if %{_repository} == "mobile"
-BuildRequires:  pkgconfig(capi-base-common)
-BuildRequires:  pkgconfig(capi-appfw-application)
-%endif
-%if %{_repository} == "wearable"
-BuildRequires:  pkgconfig(cairo)
-BuildRequires:  gettext
-%endif
-
-
 
 
 %description
@@ -44,18 +41,26 @@ EFL assist library providing small utility functions (devel)
 
 
 %build
-export CFLAGS+=" -fvisibility=hidden"
-export LDFLAGS+=" -fvisibility=hidden"
+export CFLAGS+=" -fvisibility=hidden -fPIC -Wall"
+export LDFLAGS+=" -fvisibility=hidden -Wl,-z,defs -Wl,--hash-style=both -Wl,--as-needed"
 
-cd  %{_repository} && cmake . -DCMAKE_INSTALL_PREFIX=/usr
+%if 0%{?sec_build_binary_debug_enable}
+export CFLAGS="$CFLAGS -DTIZEN_DEBUG_ENABLE"
+export CXXFLAGS="$CXXFLAGS -DTIZEN_DEBUG_ENABLE"
+export FFLAGS="$FFLAGS -DTIZEN_DEBUG_ENABLE"
+%endif
+
+cmake \
+	. -DCMAKE_INSTALL_PREFIX=/usr
+
 make %{?jobs:-j%jobs}
 
 
 %install
-rm -rf %{buildroot}
-cd  %{_repository} && %make_install
-mkdir -p %{buildroot}/usr/share/license
-cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/%{name}
+%make_install
+
+mkdir -p %{buildroot}/%{_datadir}/license
+cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/%{_datadir}/license/%{name}
 
 
 %post -p /sbin/ldconfig
@@ -66,18 +71,13 @@ cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/%{name}
 
 %files
 %defattr(-,root,root,-)
-#%{_bindir}/*
 %{_libdir}/libefl-assist.so.*
+%{_datadir}/locale/*
+%{_datadir}/license/%{name}
 %manifest %{name}.manifest
-%if %{_repository} == "wearable"
-/usr/share/locale/*
-%endif
-/usr/share/license/%{name}
-
 
 %files devel
 %defattr(-,root,root,-)
 %{_includedir}/efl-assist/*.h
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/efl-assist.pc
-
