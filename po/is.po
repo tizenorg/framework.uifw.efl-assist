@@ -1,0 +1,11 @@
+msgid "IDS_SCR_SBODY_SCREEN_READER_IS_NOT_SUPPORTED_BY_THIS_APPLICATION_PRESS_THE_HOME_OR_BACK_KEY_TO_RETURN_TO_THE_HOME_SCREEN"
+msgstr "Skjálesari er ekki studdur í þessu forriti. Ýttu á heimatakkann eða bakktakkann til að fara aftur á heimaskjáinn"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "AÁBCDÐEÉFGHIÍJKLMNOÓPQRSTUÚVWXYÝZÞÆÖ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "Hreinsa allt"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Leita í reit"

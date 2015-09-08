@@ -1,0 +1,11 @@
+msgid "IDS_SCR_SBODY_SCREEN_READER_IS_NOT_SUPPORTED_BY_THIS_APPLICATION_PRESS_THE_HOME_OR_BACK_KEY_TO_RETURN_TO_THE_HOME_SCREEN"
+msgstr "Ekran oxuyucusu bu proqram tərəfindən dəstəklənmir. Əsas ekrana geri qayıtmaq üçün başlanğıc və ya geri düyməsini basın"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "ABCÇDEƏFGĞHXIİJKQLMNOÖPRSŞTUÜVYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr " Hamısını sil"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Axtarış sahəsi"

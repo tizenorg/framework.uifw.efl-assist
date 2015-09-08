@@ -1,0 +1,11 @@
+msgid "IDS_SCR_SBODY_SCREEN_READER_IS_NOT_SUPPORTED_BY_THIS_APPLICATION_PRESS_THE_HOME_OR_BACK_KEY_TO_RETURN_TO_THE_HOME_SCREEN"
+msgstr "Skjermleser støttes ikke av dette programmet. Trykk på Hjem- eller tilbaketasten for å gå tilbake til startskjermbildet"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "Fjern alt"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Søkefelt"

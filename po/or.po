@@ -1,0 +1,11 @@
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "ଅଆଇଈଉଊଋୠଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଡ଼ଢ଼ଣତଥଦଧନପଫବଭମଯୟରଲଳୱଶଷସହ"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ_SECOND"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "ସମସ୍ତ ଖାଲି କରନ୍ତୁ"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "ଫିଲ୍ଡ ସନ୍ଧାନ କରନ୍ତୁ"

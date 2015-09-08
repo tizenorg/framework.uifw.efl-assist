@@ -1,0 +1,11 @@
+msgid "IDS_SCR_SBODY_SCREEN_READER_IS_NOT_SUPPORTED_BY_THIS_APPLICATION_PRESS_THE_HOME_OR_BACK_KEY_TO_RETURN_TO_THE_HOME_SCREEN"
+msgstr "O Lector da pantalla non é compatible con esta aplicación. Pulsa a tecla de inicio ou de retroceso para volver á pantalla de inicio"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "ÁÉÍÑÓÚÜABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "Borrar todo"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Campo de busca"

@@ -1,0 +1,14 @@
+msgid "IDS_SCR_SBODY_SCREEN_READER_IS_NOT_SUPPORTED_BY_THIS_APPLICATION_PRESS_THE_HOME_OR_BACK_KEY_TO_RETURN_TO_THE_HOME_SCREEN"
+msgstr "قارئ الشاشة غير مدعوم بواسطة هذا التطبيق. اضغط على المفتاح الرئيسي أو مفتاح الرجوع للعودة إلى الشاشة الرئيسية"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "ابتثجحخدذرزسشصضطظعغفقكلمنهوي"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ_SECOND"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "حذف الكل"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "حقل البحث"

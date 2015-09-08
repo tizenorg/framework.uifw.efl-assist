@@ -1,0 +1,8 @@
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "Padamkan semua"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Medan carian"

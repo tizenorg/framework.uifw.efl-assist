@@ -1,0 +1,11 @@
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+msgstr "অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ"
+
+msgid "IDS_EA_BODY_ABCDEFGHIJKLMNOPQRSTUVWXYZ_SECOND"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+msgid "IDS_COM_BODY_CLEAR_ALL"
+msgstr "সকলো পৰিষ্কাৰ কৰক"
+
+msgid "IDS_COM_BODY_SEARCH_FIELD_T_TTS"
+msgstr "ফিল্ড অনুসন্ধান কৰক"

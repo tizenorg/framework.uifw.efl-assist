@@ -1,17 +1,21 @@
 Name:       efl-assist
 Summary:    EFL assist library
-Version:    0.1.18r02
+Version:    0.1.143
 Release:    1
 Group:      System/Libraries
-License:    APLv2
+License:    Flora-1.1
+URL:        http://www.tizen.org/
 Source0:    %{name}-%{version}.tar.gz
-BuildRequires:  cmake
 BuildRequires:  pkgconfig(elementary)
+BuildRequires:  pkgconfig(ecore-x)
 BuildRequires:  pkgconfig(dlog)
 BuildRequires:  pkgconfig(vconf)
 BuildRequires:  pkgconfig(tts)
-BuildRequires:  pkgconfig(capi-base-common)
-BuildRequires:  pkgconfig(capi-appfw-application)
+BuildRequires:  pkgconfig(cairo)
+BuildRequires:  pkgconfig(native-buffer)
+BuildRequires:  pkgconfig(capi-media-image-util)
+BuildRequires:  gettext
+BuildRequires:  cmake
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 
@@ -36,18 +40,20 @@ EFL assist library providing small utility functions (devel)
 
 
 %build
-export CFLAGS+=" -fvisibility=hidden"
-export LDFLAGS+=" -fvisibility=hidden"
-cmake . -DCMAKE_INSTALL_PREFIX=/usr
+export CFLAGS+=" -fvisibility=hidden -fPIC -Wall"
+export LDFLAGS+=" -fvisibility=hidden -Wl,-z,defs -Wl,--hash-style=both -Wl,--as-needed"
+
+cmake \
+	. -DCMAKE_INSTALL_PREFIX=/usr
 
 make %{?jobs:-j%jobs}
 
 
 %install
-rm -rf %{buildroot}
 %make_install
-mkdir -p %{buildroot}/usr/share/license
-cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/%{name}
+
+mkdir -p %{buildroot}/%{_datadir}/license
+cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/%{_datadir}/license/%{name}
 
 
 %post -p /sbin/ldconfig
@@ -58,15 +64,13 @@ cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/%{name}
 
 %files
 %defattr(-,root,root,-)
-#%{_bindir}/*
 %{_libdir}/libefl-assist.so.*
+%{_datadir}/locale/*
+%{_datadir}/license/%{name}
 %manifest %{name}.manifest
-/usr/share/license/%{name}
-
 
 %files devel
 %defattr(-,root,root,-)
 %{_includedir}/efl-assist/*.h
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/efl-assist.pc
-
